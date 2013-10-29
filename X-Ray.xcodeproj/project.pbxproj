@@ -14,7 +14,6 @@
 		865E4C6C181FD88300488B21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E4C6B181FD88300488B21 /* main.m */; };
 		865E4C70181FD88300488B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E4C6F181FD88300488B21 /* AppDelegate.m */; };
 		865E4C73181FD88300488B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865E4C71181FD88300488B21 /* Main.storyboard */; };
-		865E4C76181FD88300488B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865E4C75181FD88300488B21 /* ViewController.m */; };
 		865E4C78181FD88300488B21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865E4C77181FD88300488B21 /* Images.xcassets */; };
 		865E4C7F181FD88300488B21 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865E4C7E181FD88300488B21 /* XCTest.framework */; };
 		865E4C80181FD88300488B21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865E4C5F181FD88300488B21 /* Foundation.framework */; };
@@ -176,6 +175,7 @@
 		86939D90181FEDE5006C3607 /* GPUImageTextureInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 86939CF3181FEDE5006C3607 /* GPUImageTextureInput.m */; };
 		86939D91181FEDE5006C3607 /* GPUImageUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 86939CF5181FEDE5006C3607 /* GPUImageUIElement.m */; };
 		86939D92181FEDE5006C3607 /* GPUImageVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 86939CF7181FEDE5006C3607 /* GPUImageVideoCamera.m */; };
+		86939D96181FF1AD006C3607 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86939D95181FF1AD006C3607 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,8 +200,6 @@
 		865E4C6E181FD88300488B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		865E4C6F181FD88300488B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		865E4C72181FD88300488B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		865E4C74181FD88300488B21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		865E4C75181FD88300488B21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		865E4C77181FD88300488B21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		865E4C7D181FD88300488B21 /* X-RayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-RayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		865E4C7E181FD88300488B21 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -519,6 +517,8 @@
 		86939CF5181FEDE5006C3607 /* GPUImageUIElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageUIElement.m; sourceTree = "<group>"; };
 		86939CF6181FEDE5006C3607 /* GPUImageVideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageVideoCamera.h; sourceTree = "<group>"; };
 		86939CF7181FEDE5006C3607 /* GPUImageVideoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageVideoCamera.m; sourceTree = "<group>"; };
+		86939D94181FF1AD006C3607 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		86939D95181FF1AD006C3607 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -578,12 +578,11 @@
 		865E4C65181FD88300488B21 /* X-Ray */ = {
 			isa = PBXGroup;
 			children = (
+				86939D93181FF0F2006C3607 /* Class */,
 				86939BB8181FEDE4006C3607 /* 3rdFramWork */,
 				865E4C6E181FD88300488B21 /* AppDelegate.h */,
 				865E4C6F181FD88300488B21 /* AppDelegate.m */,
 				865E4C71181FD88300488B21 /* Main.storyboard */,
-				865E4C74181FD88300488B21 /* ViewController.h */,
-				865E4C75181FD88300488B21 /* ViewController.m */,
 				865E4C77181FD88300488B21 /* Images.xcassets */,
 				865E4C66181FD88300488B21 /* Supporting Files */,
 			);
@@ -1001,6 +1000,15 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		86939D93181FF0F2006C3607 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				86939D94181FF1AD006C3607 /* ViewController.h */,
+				86939D95181FF1AD006C3607 /* ViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1111,7 +1119,6 @@
 				86939D32181FEDE5006C3607 /* GPUImageToneCurveFilter.m in Sources */,
 				86939D4C181FEDE5006C3607 /* GPUImageVignetteFilter.m in Sources */,
 				86939D33181FEDE5006C3607 /* GPUImageWhiteBalanceFilter.m in Sources */,
-				865E4C76181FD88300488B21 /* ViewController.m in Sources */,
 				86939CFF181FEDE5006C3607 /* GPUImageDifferenceBlendFilter.m in Sources */,
 				86939D59181FEDE5006C3607 /* GPUImage3x3ConvolutionFilter.m in Sources */,
 				86939D2B181FEDE5006C3607 /* GPUImageMonochromeFilter.m in Sources */,
@@ -1139,6 +1146,7 @@
 				86939D90181FEDE5006C3607 /* GPUImageTextureInput.m in Sources */,
 				86939D76181FEDE5006C3607 /* GPUImageOpeningFilter.m in Sources */,
 				86939D80181FEDE5006C3607 /* GPUImageSobelEdgeDetectionFilter.m in Sources */,
+				86939D96181FF1AD006C3607 /* ViewController.m in Sources */,
 				86939D86181FEDE5006C3607 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
 				86939D2D181FEDE5006C3607 /* GPUImageRGBFilter.m in Sources */,
 				86939D34181FEDE5006C3607 /* GPUImageBulgeDistortionFilter.m in Sources */,
